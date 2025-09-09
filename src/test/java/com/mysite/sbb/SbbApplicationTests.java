@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDateTime;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 class SbbApplicationTests {
@@ -12,6 +15,7 @@ class SbbApplicationTests {
     @Autowired // 의존성 주입
     private QuestionRepository questionRepository;
 
+    // 샘플 데이터 생성
 	@Test
 	void testJpa() {
         Question q1 = new Question();
@@ -26,5 +30,17 @@ class SbbApplicationTests {
         q2.setCreateDate(LocalDateTime.now());
         this.questionRepository.save(q2);
 	}
+
+    // findAll 메서드 - 저장된 모든 질문 데이터 조회
+    @Test
+    void testJpa2() {
+        List<Question> all = this.questionRepository.findAll();
+        assertEquals(2, all.size());
+
+        Question q = all.get(0);
+        assertEquals("sbb가 무엇인가요?", q.getSubject());
+    }
+
+
 
 }
