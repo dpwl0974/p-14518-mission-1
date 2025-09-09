@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -22,5 +23,10 @@ public class Question {
     private String content;
 
     private LocalDateTime createDate;
+
+    // mappedBy: 참조 엔터티 속성명
+    // 답변 여러개 -> List
+    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
+    private List<Answer> answers;
 
 }
