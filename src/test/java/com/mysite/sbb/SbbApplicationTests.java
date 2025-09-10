@@ -3,6 +3,7 @@ package com.mysite.sbb;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -122,5 +123,19 @@ class SbbApplicationTests {
         assertTrue(oa.isPresent());
         Answer a = oa.get();
         assertEquals(2, a.getQuestion().getId());
+    }
+
+    // 질문 데이터 -> 답변 데이터 찾기
+    @Transactional // DB 세션 유지
+    @Test
+    void testJpa11() {
+        Optional<Question> oq = this.questionRepository.findById(2);
+        assertTrue(oq.isPresent());
+        Question q = oq.get();
+
+        List<Answer> answerList = q.getAnswers();
+
+        assertEquals(1, answerList.size());
+        assertEquals("네 자동으로 생성됩니다.", answerList.get(0).getContent());
     }
 }
