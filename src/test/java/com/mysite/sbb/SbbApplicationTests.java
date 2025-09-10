@@ -17,6 +17,9 @@ class SbbApplicationTests {
     @Autowired // 의존성 주입
     private QuestionRepository questionRepository;
 
+    @Autowired
+    private AnswerRepository answerRepository;
+
     // 샘플 데이터 생성
 	@Test
 	void testJpa() {
@@ -96,5 +99,19 @@ class SbbApplicationTests {
         Question q = oq.get();
         this.questionRepository.delete(q);
         assertEquals(1, this.questionRepository.count()); // 삭제 후 값
+    }
+
+    // 답변 데이터 저장 - 2번 질문에 답변
+    @Test
+    void testJpa9() {
+        Optional<Question> oq = this.questionRepository.findById(2);
+        assertTrue(oq.isPresent());
+        Question q = oq.get();
+
+        Answer a = new Answer();
+        a.setContent("네 자동으로 생성됩니다.");
+        a.setQuestion(q);  // 어떤 질문의 답변인지 알기위해 Question 객체 필요
+        a.setCreateDate(LocalDateTime.now());
+        this.answerRepository.save(a);
     }
 }
