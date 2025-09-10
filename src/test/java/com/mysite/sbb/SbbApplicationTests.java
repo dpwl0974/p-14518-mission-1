@@ -114,4 +114,13 @@ class SbbApplicationTests {
         a.setCreateDate(LocalDateTime.now());
         this.answerRepository.save(a);
     }
+
+    // 답변 데이터 단건 조회 - 1번 답변 조회 및 연결된 질문 id가 2인지 확인
+    @Test
+    void testJpa10() {
+        Optional<Answer> oa = this.answerRepository.findById(1);
+        assertTrue(oa.isPresent());
+        Answer a = oa.get();
+        assertEquals(2, a.getQuestion().getId());
+    }
 }
