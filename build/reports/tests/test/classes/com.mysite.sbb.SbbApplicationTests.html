@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.366s</div>
+<div class="counter">0.345s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,8 +81,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testJpa()</td>
-<td class="success">0.366s</td>
+<td class="success">testJpa5()</td>
+<td class="success">0.345s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +90,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>10:27:39.411 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mysite.sbb.SbbApplicationTests]: SbbApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-10:27:39.459 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mysite.sbb.SbbApplication for test class com.mysite.sbb.SbbApplicationTests
+<pre>09:13:28.141 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mysite.sbb.SbbApplicationTests]: SbbApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:13:28.190 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mysite.sbb.SbbApplication for test class com.mysite.sbb.SbbApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -102,18 +102,18 @@
 
 ?[32m :: Spring Boot :: ?[39m              ?[2m (v3.5.5)?[0;39m
 
-?[2m2025-09-09T10:27:39.643+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.mysite.sbb.SbbApplicationTests      ?[0;39m ?[2m:?[0;39m Starting SbbApplicationTests using Java 21.0.2 with PID 86925 (started by yeaji in /Users/yeaji/IdeaProjects/p-14518-mission-1-main)
-?[2m2025-09-09T10:27:39.645+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.mysite.sbb.SbbApplicationTests      ?[0;39m ?[2m:?[0;39m The following 1 profile is active: &quot;dev&quot;
-?[2m2025-09-09T10:27:39.872+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-?[2m2025-09-09T10:27:39.894+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
-?[2m2025-09-09T10:27:40.047+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.hibernate.jpa.internal.util.LogHelper ?[0;39m ?[2m:?[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
-?[2m2025-09-09T10:27:40.064+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36morg.hibernate.Version                   ?[0;39m ?[2m:?[0;39m HHH000412: Hibernate ORM core version 6.6.26.Final
-?[2m2025-09-09T10:27:40.076+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.h.c.internal.RegionFactoryInitiator   ?[0;39m ?[2m:?[0;39m HHH000026: Second-level cache disabled
-?[2m2025-09-09T10:27:40.190+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.s.o.j.p.SpringPersistenceUnitInfo     ?[0;39m ?[2m:?[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
-?[2m2025-09-09T10:27:40.200+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Starting...
-?[2m2025-09-09T10:27:40.295+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.pool.HikariPool       ?[0;39m ?[2m:?[0;39m HikariPool-1 - Added connection conn0: url=jdbc:h2:./db_dev user=SA
-?[2m2025-09-09T10:27:40.296+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Start completed.
-?[2m2025-09-09T10:27:40.318+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36morg.hibernate.orm.connections.pooling   ?[0;39m ?[2m:?[0;39m HHH10001005: Database info:
+?[2m2025-09-10T09:13:28.371+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.mysite.sbb.SbbApplicationTests      ?[0;39m ?[2m:?[0;39m Starting SbbApplicationTests using Java 21.0.2 with PID 93490 (started by yeaji in /Users/yeaji/IdeaProjects/p-14518-mission-1-main)
+?[2m2025-09-10T09:13:28.372+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.mysite.sbb.SbbApplicationTests      ?[0;39m ?[2m:?[0;39m The following 1 profile is active: &quot;dev&quot;
+?[2m2025-09-10T09:13:28.607+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[2m2025-09-10T09:13:28.627+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+?[2m2025-09-10T09:13:28.778+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.hibernate.jpa.internal.util.LogHelper ?[0;39m ?[2m:?[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+?[2m2025-09-10T09:13:28.800+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36morg.hibernate.Version                   ?[0;39m ?[2m:?[0;39m HHH000412: Hibernate ORM core version 6.6.26.Final
+?[2m2025-09-10T09:13:28.814+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.h.c.internal.RegionFactoryInitiator   ?[0;39m ?[2m:?[0;39m HHH000026: Second-level cache disabled
+?[2m2025-09-10T09:13:28.930+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.s.o.j.p.SpringPersistenceUnitInfo     ?[0;39m ?[2m:?[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+?[2m2025-09-10T09:13:28.941+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Starting...
+?[2m2025-09-10T09:13:29.038+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.pool.HikariPool       ?[0;39m ?[2m:?[0;39m HikariPool-1 - Added connection conn0: url=jdbc:h2:./db_dev user=SA
+?[2m2025-09-10T09:13:29.039+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Start completed.
+?[2m2025-09-10T09:13:29.064+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36morg.hibernate.orm.connections.pooling   ?[0;39m ?[2m:?[0;39m HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -121,10 +121,10 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-?[2m2025-09-09T10:27:40.643+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.h.e.t.j.p.i.JtaPlatformInitiator      ?[0;39m ?[2m:?[0;39m HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-?[2m2025-09-09T10:27:40.666+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mj.LocalContainerEntityManagerFactoryBean?[0;39m ?[2m:?[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
-?[2m2025-09-09T10:27:40.719+09:00?[0;39m ?[33m WARN?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mJpaBaseConfiguration$JpaWebConfiguration?[0;39m ?[2m:?[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-?[2m2025-09-09T10:27:40.921+09:00?[0;39m ?[32m INFO?[0;39m ?[35m86925?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.mysite.sbb.SbbApplicationTests      ?[0;39m ?[2m:?[0;39m Started SbbApplicationTests in 1.403 seconds (process running for 1.848)
+?[2m2025-09-10T09:13:29.405+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mo.h.e.t.j.p.i.JtaPlatformInitiator      ?[0;39m ?[2m:?[0;39m HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+?[2m2025-09-10T09:13:29.430+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mj.LocalContainerEntityManagerFactoryBean?[0;39m ?[2m:?[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+?[2m2025-09-10T09:13:29.484+09:00?[0;39m ?[33m WARN?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mJpaBaseConfiguration$JpaWebConfiguration?[0;39m ?[2m:?[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[2m2025-09-10T09:13:29.736+09:00?[0;39m ?[32m INFO?[0;39m ?[35m93490?[0;39m ?[2m--- [sbb] [    Test worker] ?[0;39m?[36mcom.mysite.sbb.SbbApplicationTests      ?[0;39m ?[2m:?[0;39m Started SbbApplicationTests in 1.485 seconds (process running for 1.936)
 ?[35m[Hibernate]?[0m 
     /* &lt;criteria&gt; */ ?[34mselect?[0m
         q1_0.id,
@@ -132,7 +132,10 @@
         q1_0.create_date,
         q1_0.subject 
     ?[34mfrom?[0m
-        question q1_0
+        question q1_0 
+    ?[34mwhere?[0m
+        q1_0.subject=? 
+        ?[34mand?[0m q1_0.content=?
 </pre>
 </span>
 </div>
@@ -155,7 +158,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.3</a> at 2025. 9. 9. 오전 10:27:41</p>
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 2025. 9. 10. 오전 9:13:30</p>
 </div>
 </div>
 </body>
